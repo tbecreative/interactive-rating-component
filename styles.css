@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #141519;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin: 0;
+}
+
+.main-container,
+.thanks-container {
+    background-color: #1F2630;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 3px #121216;
+    font-family: arial;
+    font-size: 24px;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    color: hsl(217, 12%, 63%);
+    margin: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.child {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    width: auto;
+    height: 300px;
+    margin: 30px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.circle {
+    font-size: 12px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    color: hsl(216, 12%, 54%);
+    text-align: center;
+}
+
+button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color:hsl(0, 0%, 100%);
+}
+
+button:focus {
+    background-color: hsl(217, 12%, 63%);
+    color:hsl(0, 0%, 100%);
+}
+
+.star {
+    background-color: hsl(213, 19%, 18%);
+    padding: 15px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+
+button {
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin-top: 5px;
+    border: 0;
+    background-color: hsl(25, 97%, 53%);
+    color:  hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    align-items: center;
+    cursor: pointer;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.hidden {
+    display: none;
+}
+
+.thanks {
+    width: 30%;
+}
+
+
+#thank-you-box {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#selection {
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    border-radius: 20px;
+    padding: 0px 10px;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+}
+
+p {
+    font-size: 15px;
+}
+
+#rate-button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+#submit-button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+      padding: 10px;
+    }
+    
+    .main-container,
+    .thanks-container {
+      width: 100%;
+      height: auto;
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    
+    .child {
+      font-size: 14px;
+      margin: 10px 0;
+    }
+    
+    ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .circle {
+      width: 30px;
+      height: 30px;
+      font-size: 10px;
+      padding: 5px;
+    }
+    
+    button {
+      width: 100%;
+      font-size: 16px;
+    }
+    
+    #thank-you-box {
+      width: 100%;
+    }
+    
+    #selection {
+      font-size: 12px;
+    }
+  }
